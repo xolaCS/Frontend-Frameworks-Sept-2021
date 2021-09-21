@@ -3,6 +3,6 @@ Vue Framework
 - Software Framework that provides us with various abstractions that allow us to develop an interactive PWA 
 - Up until now we have been working with standard, "Vanilla JS" ( plain ) 
 - Allows us to quicken the dev process
-- Seperates out logic for Model, View and Controller ( MVC )
+- Seperate out logic for Model, View and Controller ( MVC )
 - Best for larger projects with a reasonable lifespan
 - Reactivity System makes it easy to establish two -way data binding between the model and the view 
