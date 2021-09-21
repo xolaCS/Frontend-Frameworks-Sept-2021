@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Vue</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+
+    <div id="myApp">
+
+        <h1>{{title}}</h1>
+
+        <input type="text" v-model="myOutPut">
+
+        <p id="output">{{myOutPut.length}}</p>
+
+        <button v-if="isValidUser" >LOG IN</button>
+
+    </div>
+
+    <script>
+
+        const config = {
+            el : "#myApp", 
+            data: {
+                title : "Hello World", 
+                myOutPut : "", 
+                isValidUser : false, 
+
+            }
+        }; 
+
+        new Vue(config)
+    </script>
+    
+</body>
+</html>

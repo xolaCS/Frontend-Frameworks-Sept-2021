@@ -1,0 +1,36 @@
+
+
+## JavaScript data types and data structures
+
+Here are the built-in data structures available in JavaScript and what properties they have.
+
+# Primitive values 
+    -Boolean type
+    -Null type
+    -Undefined type
+    -Number type
+    -String type
+
+Objects (collections of properties)
+
+# Dynamic typing
+
+JavaScript is a loosely typed and dynamic language. Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types:
+
+let foo = 42;    // foo is now a number
+foo     = 'bar'; // foo is now a string
+foo     = true;  // foo is now a boolean
+
+
+Classes
+    - Template 
+    - Instantiating a new object 
+    - Have a constructors
+    - To create an instance use "new"
+    - use the keyword "class"
+
+Constructor
+
+- method sets the initial value of the class
+
+A good resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures 
