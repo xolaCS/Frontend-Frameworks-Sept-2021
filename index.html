@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro to Vue</title>
+    <title>Document</title>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <!-- <script src="https://unpkg.com/vue"></script> -->
+    <link rel="stylesheet" href="./static/css/globalStyles.css" type="text/css">
+
+
 </head>
+
 <body>
 
+
     <div id="myApp">
+        <h1>{{studentName}}</h1>
 
-        <h1>{{title}}</h1>
+        <input type="text" v-model="studentName">
+        <button @click="saveItem" >Add Student</button>
 
-        <input type="text" v-model="myOutPut">
+        <hr>
+        <button v-if="isLoggedIn">LOG OUT</button>
+        <button v-if="!isLoggedIn">LOG IN</button>
+        <hr>
 
-        <p id="output">{{myOutPut.length}}</p>
-
-        <button v-if="isValidUser" >LOG IN</button>
-
+        <ul>
+            <li v-for="student in classList">
+                {{ student }}
+            </li>
+        </ul>
     </div>
 
-    <script>
+    <script src="./static/js/logic.js"></script>
 
-        const config = {
-            el : "#myApp", 
-            data: {
-                title : "Hello World", 
-                myOutPut : "", 
-                isValidUser : false, 
 
-            }
-        }; 
-
-        new Vue(config)
-    </script>
-    
 </body>
+
 </html>

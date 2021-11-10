@@ -1,21 +1,19 @@
-let myVue = new Vue({
-    el: '#myApp', 
+// import studentData from "./static/data/data.json"
+
+const config = {
+    el: "#myApp",
     data: {
-        state: "default", 
-        title : 'This is a title from the view ecosystem', 
-        myModel: "This is reactive", 
-        isLoggedOut: true, 
-        menuItems : ["Home", "About", "Contact Me"], 
-        myList: [], 
+        studentName: "NA",
+        isLoggedIn: true,
+        classList: ["Mathew", "James", "Sam"]
     }, 
-    methods: {
+    methods : {
         saveItem() {
-            this.myList.push(this.myModel); 
-        }, 
-        changeState(newState) {
-            this.state = newState; 
+            this.classList.push(this.studentName)
         }
     }
-})
+};
 
-document.getElementById('output').innerHTML = myVue.$data.title; 
+new Vue(config);
+
+//Logic implemented here 
